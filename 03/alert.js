@@ -7,20 +7,17 @@ const cc = (card) => {
         case 4:
         case 5:
         case 6:
-            count++;
-            break;
+            count++;    
         case 7:
         case 8:
         case 9:
             count;
-            break;
         case 10:
         case "J":
         case "Q":
         case "K":
         case "A":
             count--;
-            break;
     }
     return count > 0 ? count + ' Bet': count + ' Hold';
 
