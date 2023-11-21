@@ -31,29 +31,40 @@ let myPC = {
 console.log(myPC);
 
 let tryToArraySetObject = {
-    name : ['Oleg', 'Dima', 'Stas'],
-    age : [24, 24, 26],
+    name: ['Oleg', 'Dima', 'Stas'],
+    age: [24, 24, 26],
     status: ['Handsome Boy', 'Goblin Boy', 'Lucky Boy'],
 }
 console.log(tryToArraySetObject.name[2]);
 
-let wordsTranslate = {
-    word0 : {
-        word: 'measure',
-        wordTranslate: 'измерять'
+
+const wordsTranslate = {
+    word0: {
+        original: 'Programmer',
+        translate: ['Программист', 'Кодер', 'Разработчик'],
     },
-    word1 : {
-        word: 'inch',
-        wordTranslate: 'дюйм'
+    word1: {
+        original: 'Hello',
+        translate: ['Привет', 'Здравствуйте', 'Здорова'],
     },
     word2: {
-        word: 'boat',
-        wordTranslate: 'лодка'
+        original: 'Expert',
+        translate: ['Задрот', 'Эксперт', 'Гений'],
     },
     word3: {
-        word: 'wonder',
-        wordTranslate: 'чудо/удивляться'
+        original: 'Teacher',
+        translate: ['Учитель', 'Педагог', 'Классный руководитель'],
     },
 }
 
-console.log(wordsTranslate);
+const setting = {
+    minCorrectAnswerPercent: 50,
+    wordsCount: 4,
+}
+
+const userAnswer = prompt(`${wordsTranslate.word0.original}`,).toLowerCase();
+if(userAnswer === wordsTranslate.word0.translate) {
+    console.log(wordsTranslate.word0);
+}else {
+    console.log('Error!');
+}
