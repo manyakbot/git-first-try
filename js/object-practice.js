@@ -36,3 +36,24 @@ let tryToArraySetObject = {
     status: ['Handsome Boy', 'Goblin Boy', 'Lucky Boy'],
 }
 console.log(tryToArraySetObject.name[2]);
+
+let wordsTranslate = {
+    word0 : {
+        word: 'measure',
+        wordTranslate: 'измерять'
+    },
+    word1 : {
+        word: 'inch',
+        wordTranslate: 'дюйм'
+    },
+    word2: {
+        word: 'boat',
+        wordTranslate: 'лодка'
+    },
+    word3: {
+        word: 'wonder',
+        wordTranslate: 'чудо/удивляться'
+    },
+}
+
+console.log(wordsTranslate);
