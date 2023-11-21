@@ -35,7 +35,7 @@ let tryToArraySetObject = {
     age: [24, 24, 26],
     status: ['Handsome Boy', 'Goblin Boy', 'Lucky Boy'],
 }
-console.log(tryToArraySetObject[name[2]]);
+console.log(tryToArraySetObject.name[2]);
 
 
 const wordsTranslate = {
@@ -57,7 +57,7 @@ const wordsTranslate = {
     },
 }
 
-console.log(wordsTranslate[word0][original].toLowerCase());
+console.log(wordsTranslate.word0.original.toLowerCase());
 
 const setting = {
     minCorrectAnswerPercent: 50,
