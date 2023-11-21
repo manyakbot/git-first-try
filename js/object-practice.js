@@ -57,14 +57,15 @@ const wordsTranslate = {
     },
 }
 
+console.log(wordsTranslate.word0.original.toLowerCase());
+
 const setting = {
     minCorrectAnswerPercent: 50,
     wordsCount: 4,
 }
 
-const userAnswer = prompt(`${wordsTranslate.word0.original}`,).toLowerCase();
-if(userAnswer === wordsTranslate.word0.translate) {
-    console.log(wordsTranslate.word0);
-}else {
+const userAnswer = prompt('Answer the question: перевод Programmer',);
+let joyjoy = wordsTranslate.word0.translate.includes(userAnswer) ?
+    console.log('Включает!') :
     console.log('Error!');
-}
+document.write(joyjoy);
