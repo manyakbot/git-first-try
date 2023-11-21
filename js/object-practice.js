@@ -29,3 +29,10 @@ let myPC = {
 }
 
 console.log(myPC);
+
+let tryToArraySetObject = {
+    name : ['Oleg', 'Dima', 'Stas'],
+    age : [24, 24, 26],
+    status: ['Handsome Boy', 'Goblin Boy', 'Lucky Boy'],
+}
+console.log(tryToArraySetObject.name[2]);
