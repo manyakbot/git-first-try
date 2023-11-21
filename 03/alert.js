@@ -1,19 +1,29 @@
 let count = 0;
 
 const cc = (card) => {
-    if(card >= 2 && card <= 7){
-        return ((count += 1) + ' Bet');
+    switch (card) {
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+            count++;
+            break;
+        case 7:
+        case 8:
+        case 9:
+            count;
+            break;
+        case 10:
+        case "J":
+        case "Q":
+        case "K":
+        case "A":
+            count--;
+            break;
     }
-    else if(card >= 7 && card <= 9) {
-        return ((count-- ) + ' Hold');
-    }
-    else if(card == 10 && card == 'J' && card == 'Q' && card == 'K' && card == 'A') {
-        return ((count) + ' Hold');
-  }
-
-    return count;
-
+    return count > 0 ? count + ' Bet': count + ' Hold';
 
 }
 
-console.log(cc(10)); console.log(cc('J')); console.log(cc('Q')); console.log(cc('K')); console.log(cc('A'));
+console.log(cc(10)); console.log(cc("J")); console.log(cc("Q")); console.log(cc("K")); console.log(cc("A"));
