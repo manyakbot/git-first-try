@@ -7,7 +7,7 @@ const books = [[['War and love'], [], []],
 
 for(i = 0; i < books.length; i++) {
     for(j = 0; j < books.length; j++){
-        if(books[i][j].length > 0){
+        if(books[i][j].length > 0){ // проверям пустой ли массив
             console.log(books[i][j])
         }
         else {
