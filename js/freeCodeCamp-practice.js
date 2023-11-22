@@ -1,4 +1,4 @@
-const phoneticLookup = (val) => {
+function phoneticLookup (val) {
     let result = "";
 
     const lookup = {
@@ -8,6 +8,12 @@ const phoneticLookup = (val) => {
         echo: "Easy",
         foxtrot: "Frank",
     }
+
+    result = lookup[val];
+    
+    
     return result;
 }
-console.log(phoneticLookup(2));
+console.log(phoneticLookup('alpha'));
+
+
