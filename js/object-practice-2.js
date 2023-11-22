@@ -35,3 +35,6 @@ newObject.owner = 'Olzhabay'; // я добавил новое свойство �
 console.log(newObject['color'], newObject.name)
 console.log(newObject);
 
+delete newObject['owner']; // мы также можем удалять свойство у объектов
+console.log(newObject);
+
