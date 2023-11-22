@@ -1,29 +1,49 @@
-const shoppingList = [{
-    orderFromMom: {
-        shop0: 'milk',
-        shop1: 'bread',
-        shop2: 'eggs'
+const studentGrades = [{
+    name: 'Oleg',
+    age: 24,
+    grades: {
+        physisc: 80,
+        chemistry: 50,
+        mathematics: 75,
+        informatics: 90
     }
 }, {
-    orderFromDad: {
-        shop0: 'Beer',
-        shop1: 'Fish',
-        shop2: {
-            name: 'Bicycle',
-            model: 'BMX',
-            color: 'Black-white',
-            price: 25000
-        }
+    name: 'Anton',
+    age: 19,
+    grades: {
+        physisc: 70,
+        chemistry: 70,
+        mathematics: 75,
+        informatics: 70
     }
+
+
 }, {
-    orderFromBrother: {
-        shop0: 'Cheese',
-        shop1: 'Beer',
-        shop2: null
+    name: 'Stas',
+    age: 21,
+    grades: {
+        physisc: 75,
+        chemistry: 78,
+        mathematics: 90,
+        informatics: 95
+    }
+
+}, {
+    name: 'Dima',
+    age: 23,
+    grades: {
+        physisc: 90,
+        chemistry: 90,
+        mathematics: 95,
+        informatics: 90
     }
 }];
 
-let changeOrder = shoppingList[2];
-changeOrder.orderFromBrother.shop2 = 'Chocolate';
-console.log(changeOrder.orderFromBrother);
+let sum = 0;
 
+const getStudensArray = (studentGrades) => {
+    for (i = 0; i < studentGrades.length; i++) {
+            sum += studentGrades[i];
+    }
+}
+console.log(sum);
