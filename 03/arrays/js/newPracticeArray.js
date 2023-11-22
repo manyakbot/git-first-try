@@ -39,11 +39,10 @@ const studentGrades = [{
     }
 }];
 
-let sum = 0;
 
-const getStudensArray = (studentGrades) => {
-    for (i = 0; i < studentGrades.length; i++) {
-            sum += studentGrades[i];
-    }
-}
-console.log(sum);
+
+
+const calculateAverageScore = (student) => {
+    let sum = 0;
+};
+console.log(calculateAverageScore());
