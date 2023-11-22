@@ -31,4 +31,7 @@ const newObject = {
     legs: 4,
 }
 
+newObject.owner = 'Olzhabay'; // я добавил новое свойство уже к существующему объекту!
 console.log(newObject['color'], newObject.name)
+console.log(newObject);
+
