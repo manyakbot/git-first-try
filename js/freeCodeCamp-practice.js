@@ -1,3 +1,10 @@
 const checkObj = (obj, checkProp) => {
-    return obj.hasOwnProperty(checkProp) ? obj['checkProp'] : 'Not found!';
+    if(obj.hasOwnProperty(checkProp)){
+        return obj[checkProp];
+      }else {
+        return "Not found"
+      }
 }
+const object = {name: 'Oleg'};
+const currentObject = checkObj(object, 'name');
+console.log(currentObject);
