@@ -43,6 +43,25 @@ const studentGrades = [{
 
 
 const calculateAverageScore = (student) => {
-    let sum = 0;
+    let counter = 0;
+    for(i = 0; i < student.length; i++) {
+        counter += student[i].grades.chemistry;
+        console.log(student[i].grades.chemistry);
+    }
+    
+    return counter / student.length;
 };
-console.log(calculateAverageScore());
+
+console.log(calculateAverageScore(studentGrades));
+
+const arrays = Object.values({ // 
+    physisc: 80,
+    chemistry: 50,
+    mathematics: 75,
+    informatics: 90
+});
+
+for(i = 0; i < Object.values.length; i++) {
+    console.log(arrays[i]);
+}
+
