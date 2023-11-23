@@ -1,10 +1,26 @@
-const secondsInAMinute = 60; 
-const minutesInAnOur = 60;
-const secondsInAnOur = secondsInAMinute * minutesInAnOur;
-const hoursInADay = 24;
-const secondsInADay = secondsInAnOur * hoursInADay;
-const daysInAnYear = 365;
-const secondsInAnYear = daysInAnYear * secondsInADay;
-const myAge = 24;
-const myAgeInASeconds = secondsInAnYear * myAge;
-console.log(myAgeInASeconds);
+const myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    }
+  ];
+
+  myMusic.add = {
+    "artist" : "Jean",
+    "title" : "Guitar",
+    "release_year" : 2000,
+    "formats" : [
+      "DVD"
+    ],
+    "gold": true
+};
+
+    
+    console.log(myMusic);
