@@ -1,12 +1,7 @@
-const averageOfNumbers = (array) => {
-    let counter = 0;
-
-    for (i = 0; i < array.length; i++) {
-        counter += array[i];
-    }
-    return counter / array.length;
+const findMaxElement = (arr) => {
+    return Math.max(...arr);
 }
-const currentArray = [1, 2, 3, 4, 5];
-const callArray = averageOfNumbers(currentArray);
 
-console.log(callArray);
+const array = [234, 3245, 545, 1231, 5443];
+const findMaxArray = findMaxElement(array);
+console.log(findMaxArray);
