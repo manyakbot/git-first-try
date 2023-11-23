@@ -1,7 +1,10 @@
-const drawCats = (howManyCats) => {
-    for(i = 0; i < howManyCats; i++){
-        console.log(i + "=^.^=");
-    }
-    return;
-}
-console.log(drawCats(10));
+const secondsInAMinute = 60; 
+const minutesInAnOur = 60;
+const secondsInAnOur = secondsInAMinute * minutesInAnOur;
+const hoursInADay = 24;
+const secondsInADay = secondsInAnOur * hoursInADay;
+const daysInAnYear = 365;
+const secondsInAnYear = daysInAnYear * secondsInADay;
+const myAge = 24;
+const myAgeInASeconds = secondsInAnYear * myAge;
+console.log(myAgeInASeconds);
