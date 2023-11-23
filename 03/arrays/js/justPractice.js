@@ -1,7 +1,8 @@
-function filtOfNumbers (array) {
-    return array.filter(number => number % 2 == 0);
-}
-const arr = [2,443,56,312];
-const onlyEvenNumbers = filtOfNumbers(arr);
+const concatArrays = (array0, array1) => {
+    return array0.concat(array1);
+} 
 
-console.log(onlyEvenNumbers);
+const array = [1,2,3,4,5];
+const array2 = [6,7,8,9,10]
+const arr = concatArrays(array, array2); 
+console.log(arr);
