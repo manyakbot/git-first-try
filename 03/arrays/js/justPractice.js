@@ -1,7 +1,7 @@
-const findMaxElement = (arr) => {
-    return Math.max(...arr);
+function filtOfNumbers (array) {
+    return array.filter(number => number % 2 == 0);
 }
+const arr = [2,443,56,312];
+const onlyEvenNumbers = filtOfNumbers(arr);
 
-const array = [234, 3245, 545, 1231, 5443];
-const findMaxArray = findMaxElement(array);
-console.log(findMaxArray);
+console.log(onlyEvenNumbers);
