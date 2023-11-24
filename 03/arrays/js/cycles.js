@@ -1,17 +1,11 @@
-const students = [{
-    name: 'Diana',
-    age: 13
-}, {
-    name: 'Margarrita',
-    age: 13
-}, {
-    name: 'Karolina',
-    age: 12
-}];
-let counter = 0;
-for(i = 0; i < students.length; i++) {
-    // document.write(students[i].name + " " + students[i].age + " years old", '<br>');
-    counter += students[i].age
-    
+const shoppingList = [
+    ['milk', 'bread', 'eggs'],
+    ['juice', 'ice cream'],
+    ['cat food', 'shampoo']
+];
+
+for (i = 0; i < shoppingList.length; i++) {
+    for(j = 0; j <shoppingList.length; i++){
+        document.write(shoppingList[i][j], '<br>');
+    }
 }
-document.write(counter / students.length)
