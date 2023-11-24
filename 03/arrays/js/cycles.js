@@ -1,12 +1,4 @@
-
-const drawCats = (howManyTimes) => {
-    let counter = 0;    
-    for(i = 0; i < howManyTimes; i++) {
-        // console.log(i + " =^.^=");
-        counter += i;
-    }
-    return counter / howManyTimes;
+const num = 11;
+for(i = 0; i < num; i++) {
+    console.log(i + i + i);
 }
-console.log(drawCats(10));
-console.log(drawCats(10));
-
