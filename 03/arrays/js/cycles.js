@@ -1,4 +1,6 @@
-const num = 11;
-for(i = 0; i < num; i++) {
-    console.log(i + i + i);
+const grades = [5, 4, 3, 5, 4];
+const students = ['Misha', 'Sasha', 'Kasha', 'Oleg', 'Stas'];
+
+for (let grade = 0; grade < grades.length; grade++) {
+    document.write(students[grade] + " " + grades[grade], '<br>')
 }
