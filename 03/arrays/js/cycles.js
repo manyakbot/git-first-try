@@ -17,6 +17,13 @@
 
 // console.log(convertArr);
 
-const massiv = ['oleg', 'stas', 'dima'];
-const count = massiv.map(item => item.length);
-console.log(count);
+// const massiv = ['oleg', 'stas', 'dima'];
+// const count = massiv.map(item => item.length);
+// console.log(count);
+
+const arr1 = ['qwe', 'asdwq', 'asdwq'];
+const arr2 = ['asd', 'asdwq', 'asdwr'];
+
+const concatArrays = arr1.map((item, index) => item.concat(arr2[index]));
+
+console.log(concatArrays);
