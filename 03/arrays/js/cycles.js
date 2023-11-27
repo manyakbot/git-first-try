@@ -1,21 +1,8 @@
-const array = [1,2,3,4,5,6];
+// Setup
+const myArray = [];
 
-const averageOfArray = (arr) => {
-    let counter = 0;
-
-    for(i = 0; i < arr.length; i++) {
-        counter += arr[i];
-    }
-    return counter / arr.length
+for(let i = 1; i < 10; i += 2) {
+  myArray.push(i)
 }
-console.log(averageOfArray(array));
-
-const array1 = [1,2,3,4,5,6];
-
-const averageOfArray1 = (arr1) => {
-    
-    const sum = arr1.reduce((acc, currentValue) => acc + currentValue, 0);
-    return sum / arr1.length;
-}
-
-console.log(averageOfArray1(array1));
+// Only change code below this line
+console.log(myArray);
