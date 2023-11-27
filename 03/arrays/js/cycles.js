@@ -1,11 +1,6 @@
-const arr0 =  [1,2,3,4,5];
+const array = [1,2,3,4];
 
-const sumOfArray =(array) => {
-    let counter = 0;
-    for(i = 0; i < array.length; i++) {
-        counter += array[i];
-        
-    }
-    return counter;
+function massiv(arr) {
+    return arr.reduce((acc, currentValue) => acc + currentValue, 0 )
 }
-console.log(sumOfArray(arr0));
+console.log(massiv(array));
