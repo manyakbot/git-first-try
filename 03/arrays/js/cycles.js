@@ -1,7 +1,7 @@
-const array = [1,2,34,32,2,1,2,34,5];
+const array = ['jack', 'hulio', 'almas'];
 
-const countElements  = (arr, target) => {
-    return arr.reduce((count, element) => (element === target ? count + 1 : count), 0);
+const reverseArray = (arr) => {
+    return arr.map((item) => item + ' sel');   
 }
-const targetElement = 2;
-console.log(countElements(array, targetElement));
+
+console.log(reverseArray(array));
