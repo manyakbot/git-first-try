@@ -1,7 +1,7 @@
-const array = [1,2,2,1,3,4,5];
+const array = [1,2,34,32,2,1,2,34,5];
 
-const deleteDublicates = (arr) => {
-    return arr.filter((item, index) => arr.indexOf(item) === index);
+const countElements  = (arr, target) => {
+    return arr.reduce((count, element) => (element === target ? count + 1 : count), 0);
 }
-console.log(deleteDublicates(array));
-
+const targetElement = 2;
+console.log(countElements(array, targetElement));
