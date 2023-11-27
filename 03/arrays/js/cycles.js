@@ -1,8 +1,7 @@
-const arr0 = [12,23,2,4];
-const arr1 = [12,3,42,23];
+const array = [1,2,2,1,3,4,5];
 
-const concatArray = (array0, array1) => {
-    return array0.concat(array1);
+const deleteDublicates = (arr) => {
+    return arr.filter((item, index) => arr.indexOf(item) === index);
 }
+console.log(deleteDublicates(array));
 
-console.log(concatArray(arr0, arr1));
