@@ -1,7 +1,8 @@
-const array = [2,234,42,32];
-const elementOfArray = array[2];
-const func = (arr, element ) => {
-    return arr.indexOf(element);
+const arr0 = [12,23,2,4];
+const arr1 = [12,3,42,23];
+
+const concatArray = (array0, array1) => {
+    return array0.concat(array1);
 }
 
-console.log(func(array, elementOfArray));
+console.log(concatArray(arr0, arr1));
