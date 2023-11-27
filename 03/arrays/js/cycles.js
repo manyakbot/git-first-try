@@ -1,7 +1,5 @@
-const arr = [123,223,4,4,212,1233];
-
-function findMaxElement(array) {
-    return Math.max(...array);
+const array = [1,2,34,5,4,3,34,];
+function findEddElement(arr) {
+    return arr.filter(item => item % 2 == 0)
 }
-
-console.log(findMaxElement(arr));
+console.log(findEddElement(array));
