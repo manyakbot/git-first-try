@@ -1,6 +1,7 @@
-const array = [1,2,3,4];
+const arr = [123,223,4,4,212,1233];
 
-function massiv(arr) {
-    return arr.reduce((acc, currentValue) => acc + currentValue, 0 )
+function findMaxElement(array) {
+    return Math.max(...array);
 }
-console.log(massiv(array));
+
+console.log(findMaxElement(arr));
