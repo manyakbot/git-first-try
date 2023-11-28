@@ -1,14 +1,9 @@
+const name = 'Stas';
+const age = 26;
 
-const greet_abe = () => {
-    let name = 'Abe';
-    return `Hello, ${name}!`;
+const userProfile = {
+    name: name,
+    age: age,
+    isHeAGay: true
 }
-
-
-const greet_ben = () => {
-    let name = 'Ben';
-    return `Hello, ${name}!`;
-}
-
-console.log(greet_abe())
-console.log(greet_ben())
+console.log(userProfile);
