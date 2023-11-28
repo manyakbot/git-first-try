@@ -22,5 +22,11 @@ friendTwo.name = 'Stas';
 friendTwo.age = 26;
 friendTwo.gender.isHeAGay = false
 
+const friendThree = {... friendTwo};
+friendTwo.name = 'Kot4';
+friendTwo.age = 35;
+friendTwo.gender.isHeAGay = false
+
 console.log(friend);
 console.log(friendTwo);
+console.log(friendThree);
