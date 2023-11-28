@@ -1,11 +1,14 @@
-var name = 'Abe';
-var greet_abe = function() {
-  return "Hello, " + name + '!';
-};
-name = 'Ben';
-var greet_ben = function() {
-  return "Hello, " + name + '!';
-};
 
-greet_abe();
-greet_ben();
+const greet_abe = () => {
+    let name = 'Abe';
+    return `Hello, ${name}!`;
+}
+
+
+const greet_ben = () => {
+    let name = 'Ben';
+    return `Hello, ${name}!`;
+}
+
+console.log(greet_abe())
+console.log(greet_ben())
