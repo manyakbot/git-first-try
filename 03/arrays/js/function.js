@@ -5,8 +5,17 @@ const result = func(10, 5); // func(10, 5) это вызов функции  с 
 console.log(result);
 
 
-const findALetter = (string) => {
-    return string.split('').filter((char) => char === 'a').length; // принимает строку и возвращает количество букв "а" в ней 
-}
-console.log(findALetter('Olzhabay'));
 
+function positiveSum(arr) {
+    let counter = 0;
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] > 0) {
+          counter += arr[i];
+        }
+    }
+    return counter;
+  }
+
+  const array = [1,-4,2,12];
+  const currentArray = positiveSum(array);
+  console.log(currentArray);
