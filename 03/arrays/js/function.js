@@ -1,4 +1,12 @@
-function sum(a, b) {
-    return a + b;
+const func = (a, b) => { // объявление функции с параметрами
+    return a + b
 }
-console.log(sum(4, 5));
+const result = func(10, 5); // func(10, 5) это вызов функции  с аргументами
+console.log(result);
+
+
+const findALetter = (string) => {
+    return string.split('').filter((char) => char === 'a').length; // принимает строку и возвращает количество букв "а" в ней 
+}
+console.log(findALetter('Olzhabay'));
+
