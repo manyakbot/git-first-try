@@ -116,10 +116,6 @@ console.log(copyOfMyPhone);
 
 
 // Задача -  9. Методы объекта:
-const myBank = {
-    balance: 10000,
-
-}
 
 
 // Задача -  10. Сравнение объектов:
