@@ -5,18 +5,9 @@ const result = func(10, 5); // func(10, 5) это вызов функции  с 
 console.log(result);
 
 
-function basicOp(operation, value1, value2)
-{
-  if(operation == `+`) {
-    return value1 + value2
-  }
-  else if(operation == `-`) {
-    return value1 - value2
-  }
-  else if(operation == `*`) {
-    return value1 * value2
-  }else {
-    return value1 / value2
-  }
+function lovefunc(flower1, flower2){
+  return (flower1 %2 === 0 && flower2 %2 !== 0) || 
+  (flower1 %2 !== 0 && flower2 %2 === 0) ? true : false
 }
-basicOp();
+
+console.log(lovefunc(1, 4))
