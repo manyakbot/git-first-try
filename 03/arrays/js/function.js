@@ -5,7 +5,18 @@ const result = func(10, 5); // func(10, 5) это вызов функции  с 
 console.log(result);
 
 
-function greet() {
-    console.log('hello world');
+function basicOp(operation, value1, value2)
+{
+  if(operation == `+`) {
+    return value1 + value2
+  }
+  else if(operation == `-`) {
+    return value1 - value2
+  }
+  else if(operation == `*`) {
+    return value1 * value2
+  }else {
+    return value1 / value2
+  }
 }
-console.log(greet())
+basicOp();
