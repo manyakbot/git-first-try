@@ -4,37 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website</title>
+  <title>Figma Land</title>
   <link rel="stylesheet" type="text/css" href="css/fonts.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
-
+  <link rel="stylesheet" type="text/css" href="css/buttons.css">
 </head>
 
 <body>
   <header class="header">
-    <img class="logo" src="images/cat1.jpg" alt="">
-    <img class="avatar" src="images/cat2.jpg" alt="">
+    <section class="header__main">
+      <img src="images/logo.png" alt="something went wrong">
+      <nav class="header__nav">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <button class="secondary">Login</button>
+    </section>
+
+    <section class="header__texts">
+      <h1 class="header__texts-title">Work at the speed
+        of thought</h1>
+      <h5 class="header__texts-subtitle">Most calendars are designed for teams. Slate is designed for
+        freelancers who want a simple way to plan their schedule.</h5>
+    </section>
+
+    <section class="header__buttons">
+      <button class="primary header__first-button">Try For Free</button>
+      <button class="secondary">Learn More</button>
+    </section>
+
+    <section class="header__image">
+      <img src="images/screens.png" alt="">
+    </section>
   </header>
-  <div class="content">
-    <aside class="aside">
-      <ul>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Maiores quo neque eaque sit.</li>
-      </ul>
-    </aside>
-    <main class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Nemo, at enim. Temporibus ab saepe officia voluptatem pariatur labore dolore
-      similique omnis minima, obcaecati, esse sint ratione quibusdam nemo.Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Nemo, at enim. Temporibus ab saepe officia voluptatem pariatur
-      labore dolore similique omnis minima, obcaecati, esse sint ratione quibusdam nemo
-      consequuntur eveniet.</main>
-  </div>
-  <footer class="footer">
-    <ul>
-      <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
-  </footer>
 
   <script src="arrays/js/function.js"></script>
 </body>
