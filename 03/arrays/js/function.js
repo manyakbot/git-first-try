@@ -1,13 +1,10 @@
-const func = (a, b) => { // объявление функции с параметрами
-    return a + b
+const fc = (array) => {
+  return Math.max(...array)
 }
-const result = func(10, 5); // func(10, 5) это вызов функции  с аргументами
-console.log(result);
+const array = [1,2,3,4,5];
+const resultFc = fc(array);
+console.log(resultFc);
 
-
-function lovefunc(flower1, flower2){
-  return (flower1 %2 === 0 && flower2 %2 !== 0) || 
-  (flower1 %2 !== 0 && flower2 %2 === 0) ? true : false
-}
-
-console.log(lovefunc(1, 4))
+setTimeout(()=> {
+  console.log(fc(array));
+}, 1000);
